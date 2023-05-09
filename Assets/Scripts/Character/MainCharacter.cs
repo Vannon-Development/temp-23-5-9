@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -22,7 +23,8 @@ namespace Character
         {
             _context = new StateContext()
             {
-                Body = GetComponent<Rigidbody2D>()
+                Body = GetComponent<Rigidbody2D>(),
+                Ani = GetComponent<Animator>()
             };
             _context.CurrentState = _context.States[(int)StateContext.StateName.Idle];
             _context.CurrentState.Begin(_context);
@@ -32,6 +34,8 @@ namespace Character
         {
             public State CurrentState;
             public Rigidbody2D Body;
+            public Animator Ani;
+            public float CurrentMotion;
 
             public readonly State[] States =
             {
@@ -64,19 +68,35 @@ namespace Character
 
         private class IdleState : State
         {
+            public override void Begin(StateContext context)
+            {
+                base.Begin(context);
+                Context.Ani.SetBool("walking", false);
+                Context.Body.velocity = Vector2.zero;
+                
+            }
+
             public override void Move(float value)
             {
                 base.Move(value);
-                Context.Body.velocity = new Vector2(value, 0);
+                Context.CurrentMotion = value;
+                ChangeState(StateContext.StateName.Walk);
             }
         }
 
         private class WalkState : State
         {
+            public override void Begin(StateContext context)
+            {
+                base.Begin(context);
+                Context.Ani.SetBool("walking", true);
+                Context.Body.velocity = new Vector2(Context.CurrentMotion, 0);
+            }
+
             public override void Idle()
             {
                 base.Idle();
-                Context.Body.velocity = Vector2.zero;
+                ChangeState(StateContext.StateName.Idle);
             }
         }
     }
