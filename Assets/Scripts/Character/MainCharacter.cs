@@ -7,6 +7,7 @@ namespace Character
     public class MainCharacter : MonoBehaviour
     {
         public float walkSpeed;
+        public GameObject sprite;
         
         private void OnWalk(InputValue value)
         {
@@ -16,6 +17,16 @@ namespace Character
             else
                 _context.CurrentState.Move(val.x * walkSpeed);
         }
+
+        private void OnJump()
+        {
+            
+        }
+
+        private void OnFire()
+        {
+            
+        }
     
         private StateContext _context;
 
@@ -24,7 +35,8 @@ namespace Character
             _context = new StateContext()
             {
                 Body = GetComponent<Rigidbody2D>(),
-                Ani = GetComponent<Animator>()
+                Ani = GetComponent<Animator>(),
+                Sprite = sprite
             };
             _context.CurrentState = _context.States[(int)StateContext.StateName.Idle];
             _context.CurrentState.Begin(_context);
@@ -36,14 +48,17 @@ namespace Character
             public Rigidbody2D Body;
             public Animator Ani;
             public float CurrentMotion;
+            public GameObject Sprite;
 
             public readonly State[] States =
             {
                 new IdleState(),
-                new WalkState()
+                new WalkState(),
+                new JumpState(),
+                new FallState()
             };
             
-            public enum StateName { Idle, Walk }
+            public enum StateName { Idle, Walk, Jump, Fall }
 
         }
 
@@ -91,6 +106,7 @@ namespace Character
                 base.Begin(context);
                 Context.Ani.SetBool("walking", true);
                 Context.Body.velocity = new Vector2(Context.CurrentMotion, 0);
+                Context.Sprite.transform.localScale = new Vector2(Context.CurrentMotion < 0 ? -1 : 1, 1);
             }
 
             public override void Idle()
@@ -98,6 +114,16 @@ namespace Character
                 base.Idle();
                 ChangeState(StateContext.StateName.Idle);
             }
+        }
+
+        private class JumpState : State
+        {
+            
+        }
+
+        private class FallState : State
+        {
+            
         }
     }
 }

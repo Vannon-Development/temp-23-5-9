@@ -133,11 +133,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 17
-        y: 96
+        y: 176
         width: 46
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -153,12 +153,12 @@ TextureImporter:
       name: bomberman_spritesheet_6
       rect:
         serializedVersion: 2
-        x: 16
-        y: 15
+        x: 18
+        y: 95
         width: 48
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -174,12 +174,12 @@ TextureImporter:
       name: bomberman_spritesheet_7
       rect:
         serializedVersion: 2
-        x: 81
-        y: 15
+        x: 83
+        y: 95
         width: 46
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -195,12 +195,12 @@ TextureImporter:
       name: bomberman_spritesheet_8
       rect:
         serializedVersion: 2
-        x: 143
-        y: 15
+        x: 145
+        y: 95
         width: 48
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -216,12 +216,12 @@ TextureImporter:
       name: bomberman_spritesheet_9
       rect:
         serializedVersion: 2
-        x: 208
-        y: 15
+        x: 210
+        y: 95
         width: 45
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -237,12 +237,12 @@ TextureImporter:
       name: bomberman_spritesheet_10
       rect:
         serializedVersion: 2
-        x: 271
-        y: 15
+        x: 273
+        y: 95
         width: 47
         height: 64
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -250,6 +250,132 @@ TextureImporter:
       bones: []
       spriteID: c6123579a90cd4235b50db71ca2fa768
       internalID: -747782029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomberman_spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 227
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c12c6641042dc4a0da7bdba9d1843252
+      internalID: -1909600755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomberman_spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 227
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c5f1b78118914b50a71ca8d16546516
+      internalID: -695021267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomberman_spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 227
+        width: 5
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52375e6ab607949afb3f5269995480e4
+      internalID: -34830703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomberman_spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 227
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1b827427d154405baa8e3ad002de807
+      internalID: 1166506856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomberman_spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 227
+        width: 5
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 900f9e43f2cca40e8adb5ae2f7af1b4a
+      internalID: -1142324909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bomberman_spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 16
+        width: 42
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a064942548c7c40b58cc0f0d0eaa560b
+      internalID: -1008376699
       vertices: []
       indices: 
       edges: []
