@@ -32,7 +32,7 @@ namespace Character
         {
             public State CurrentState;
             public Rigidbody2D Body;
-            
+
             public readonly State[] States =
             {
                 new IdleState(),
