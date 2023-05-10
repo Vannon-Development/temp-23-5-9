@@ -1,0 +1,8 @@
+Sequence
+	Inverter
+		Sequence
+			InRange
+			Hold
+			Attack
+			Return
+	MoveLeft

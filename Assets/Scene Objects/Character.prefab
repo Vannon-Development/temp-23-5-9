@@ -48,6 +48,7 @@ GameObject:
   - component: {fileID: 5016990533302360361}
   - component: {fileID: 1056793468366714246}
   - component: {fileID: 184645900486894313}
+  - component: {fileID: 1584245137205629517}
   m_Layer: 0
   m_Name: Character
   m_TagString: Player
@@ -184,6 +185,19 @@ MonoBehaviour:
   shot: {fileID: 4698531076237964556, guid: df55296116c8e4bfebced8dcc18633af, type: 3}
   shotPosition: {fileID: 4825503394544257773}
   flipTransform: {fileID: 5426529397365823768}
+--- !u!114 &1584245137205629517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 610774327194886440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64ec8db6dc6b44a53a6c2d8699b9f07a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 10
 --- !u!1 &2229791887730987552
 GameObject:
   m_ObjectHideFlags: 0

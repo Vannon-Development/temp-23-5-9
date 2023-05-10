@@ -171,6 +171,8 @@ GameObject:
   - component: {fileID: 7051914178071487642}
   - component: {fileID: 7805319231384710636}
   - component: {fileID: 2798066975761018675}
+  - component: {fileID: 7210877639586911024}
+  - component: {fileID: 7141831793333627149}
   m_Layer: 0
   m_Name: Alien
   m_TagString: Untagged
@@ -235,3 +237,32 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &7210877639586911024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7613135103234082398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 64ec8db6dc6b44a53a6c2d8699b9f07a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 20
+--- !u!114 &7141831793333627149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7613135103234082398}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2b3fc0b0598347dab20438083d770a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  aiDocument: {fileID: 4900000, guid: ff4a777a686e4707bdd1f38d7dbdde7c, type: 3}
+  moveSpeed: 2
+  attackHoldTime: 0.8
+  attackSpeed: 8

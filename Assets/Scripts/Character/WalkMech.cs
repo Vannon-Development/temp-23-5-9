@@ -12,7 +12,7 @@ namespace Character
         private Animator _ani;
         private static readonly int Walking = Animator.StringToHash("walking");
 
-        void Start()
+        private void Start()
         {
             _body = GetComponent<Rigidbody2D>();
             _ani = GetComponent<Animator>();
@@ -20,8 +20,8 @@ namespace Character
 
         public void OnWalk(InputValue value)
         {
-            var val = value.Get<Vector2>();
-            if (val.magnitude.NearZero())
+            var xVal = value.Get<Vector2>().x;
+            if (xVal.NearZero())
             {
                 _ani.SetBool(Walking, false);
                 _body.velocity = new Vector2(0, _body.velocity.y);
@@ -29,8 +29,8 @@ namespace Character
             else
             {
                 _ani.SetBool(Walking, true);
-                _body.velocity = new Vector2(speed * val.x, _body.velocity.y);
-                flipTransform.transform.localScale = new Vector3(val.x < 0 ? -1 : 1, 1, 1);
+                _body.velocity = new Vector2(speed * xVal, _body.velocity.y);
+                flipTransform.transform.localScale = new Vector3(xVal < 0 ? -1 : 1, 1, 1);
             }
         }
     }

@@ -37,6 +37,8 @@ namespace Character
         private void OnTriggerEnter2D(Collider2D other)
         {
             ReturnBullet();
+            var life = other.attachedRigidbody.gameObject.GetComponent<LifeControl>();
+            if(life != null) life.DoDamage(damage);
         }
 
         public static void Fire(Shot prefab, Vector3 position, bool forward)
