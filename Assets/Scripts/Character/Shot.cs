@@ -34,7 +34,7 @@ namespace Character
             gameObject.SetActive(false);
         }
 
-        private void OnCollisionEnter(Collision other)
+        private void OnTriggerEnter2D(Collider2D other)
         {
             ReturnBullet();
         }
