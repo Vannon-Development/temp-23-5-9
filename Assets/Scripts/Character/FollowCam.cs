@@ -4,16 +4,11 @@ namespace Character
 {
     public class FollowCam : MonoBehaviour
     {
-        public MainCharacter character;
-        public float speed;
+        public GameObject character;
     
-        void Update()
+        private void FixedUpdate()
         {
-            var diff = character.transform.position - transform.position;
-            var frameMotion = speed * Time.deltaTime;
-            if (diff.magnitude < frameMotion)
-                frameMotion = diff.magnitude;
-            transform.position += diff;
+            transform.position = new Vector3(character.transform.position.x, transform.position.y, transform.position.z);
         }
     }
 }

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: eb9283e58a9944498bca248aa73272c6
+guid: f697ab391e2ea4fa0b97c11f0ddf1494
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -42,7 +42,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -127,133 +127,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: alien_spritesheet_0
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 190
-        width: 47
-        height: 39
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dea10a373673a4aa99ad1cc10cc9beaf
-      internalID: 436851839
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: alien_spritesheet_1
-      rect:
-        serializedVersion: 2
-        x: 17
-        y: 108
-        width: 45
-        height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4aa047f92f5a64f6a95761e5cfab7c61
-      internalID: -1668767848
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: alien_spritesheet_2
-      rect:
-        serializedVersion: 2
-        x: 82
-        y: 103
-        width: 44
-        height: 42
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 505551e33aa0f44e6bd0ce51d37e904b
-      internalID: -1595754783
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: alien_spritesheet_3
-      rect:
-        serializedVersion: 2
-        x: 146
-        y: 105
-        width: 45
-        height: 41
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dbe3b51bd56a644ea9f63f229443e151
-      internalID: 808771167
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: alien_spritesheet_4
-      rect:
-        serializedVersion: 2
-        x: 210
-        y: 108
-        width: 45
-        height: 41
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9b0d7ebaf4f224c8aa59d5ff25247ee3
-      internalID: -581477574
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: alien_spritesheet_5
-      rect:
-        serializedVersion: 2
-        x: 282
-        y: 106
-        width: 44
-        height: 42
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a1ce57f606731438fa0d7b5514a498a4
-      internalID: -987072736
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
@@ -264,13 +138,7 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable:
-      alien_spritesheet_0: 436851839
-      alien_spritesheet_1: -1668767848
-      alien_spritesheet_2: -1595754783
-      alien_spritesheet_3: 808771167
-      alien_spritesheet_4: -581477574
-      alien_spritesheet_5: -987072736
+    nameFileIdTable: {}
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
